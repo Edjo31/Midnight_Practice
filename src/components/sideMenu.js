@@ -1,5 +1,6 @@
 
 import { useState, useEffect } from "react";
+import { useSpring, animated } from 'react-spring';
 
 
 const SideMenu = () => {
@@ -22,6 +23,12 @@ const SideMenu = () => {
         setIsOpen(!isOpen)
         
     }
+    const dropDownMenuAnimation=useSpring(
+        {
+            transform: isOpen ? 'translateY(0%)' :'translateY(-100%)',
+        }
+    )
+    
 
     return (
         <div className="container">
@@ -31,15 +38,15 @@ const SideMenu = () => {
             </section>
          
             {isOpen && (
-        <div className="container-menu container-menu-color container-menu-center">
+        < animated.div className="container-menu container-menu-color container-menu-center" style={dropDownMenuAnimation}>
                 <ul>
-                    <li className="list">Hamburguesa 1</li>
+                    <li className="list"><a href="./routes/aboutMe.js">Acerca de</a></li>
                     <li className="list">Hamburguesa 2</li>
                     <li className="list">Hamburguesa 3</li>
                     <li className="list">Hamburguesa 3</li>
                     
                 </ul>
- </div>
+ </animated.div>
             )}
            
         </div>

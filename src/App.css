@@ -81,19 +81,26 @@ li {
   border-radius: 5px;
   font-size: 10px;
   box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.123);
+  transform: translateX(-100%);
 }
 .container-menu-color{
   background-color: rgba(38,38,53);
   color: rgb(255, 255, 255);
+  
 }
 .container-menu-center{
 
   left: 1.89%;
   top: 119%;
 }
-.list{
+a{
+  text-decoration: none;
+  color: white;
+}
+.list:hover{
+
   background-color: rgb(60,60,83);
-  padding: 1px;
+ cursor: pointer;
   border-radius: 2%;
   box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.123);
 }
