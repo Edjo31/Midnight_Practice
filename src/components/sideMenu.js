@@ -1,6 +1,7 @@
 
 import { useState, useEffect } from "react";
 import { useSpring, animated } from 'react-spring';
+import {Link} from 'react-router-dom'
 
 
 const SideMenu = () => {
@@ -40,7 +41,7 @@ const SideMenu = () => {
             {isOpen && (
         < animated.div className="container-menu container-menu-color container-menu-center" style={dropDownMenuAnimation}>
                 <ul>
-                    <li className="list"><a href="./routes/aboutMe.js">Acerca de</a></li>
+                    <a href="aboutMe"><li className="list"> Acerca de</li> </a>
                     <li className="list">Hamburguesa 2</li>
                     <li className="list">Hamburguesa 3</li>
                     <li className="list">Hamburguesa 3</li>
