@@ -1,0 +1,99 @@
+html{
+  background-color: rgb(218, 216, 216);
+}
+.App {
+  text-align: center;
+  padding: 20px;
+}
+
+.container{
+
+  position: fixed;
+  left: 45%;
+  
+}
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #f1f1f1;
+  border: none;
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  margin-bottom: 5px;
+}
+
+
+.buttonTogle{
+  position: absolute;
+   
+    width: 4%;
+    height: 8%;
+    left: 48.2%;
+    top: 3%;
+ 
+  }
+ .arrow{
+  position: absolute;
+  width: 0px;
+  height: 0px; 
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  left: -10px;
+  top: 40px;
+ 
+ }
+
+ .arrow-down {
+  border-top: 10px solid rgb(15, 15, 15);
+  transform: rotate(180deg);
+}
+.arrow-up {
+  position: absolute;
+
+  border-bottom: 10px solid black;
+  transform: rotate(180deg);
+}
+ .arrow2{
+  position: absolute;
+  width: 0; 
+  height: 0; 
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-bottom: 10px solid rgb(0, 0, 0);
+  left: 30.2%;
+  top: 80%;
+  transform: rotate(360deg);
+ }
+.container-menu{
+
+  position: absolute;
+  height: auto;
+  width: auto;
+  padding: 3px;
+  border-radius: 5px;
+  font-size: 10px;
+  box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.123);
+}
+.container-menu-color{
+  background-color: rgba(38,38,53);
+  color: rgb(255, 255, 255);
+}
+.container-menu-center{
+
+  left: 1.89%;
+  top: 119%;
+}
+.list{
+  background-color: rgb(60,60,83);
+  padding: 1px;
+  border-radius: 2%;
+  box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.123);
+}
