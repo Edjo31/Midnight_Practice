@@ -17,12 +17,24 @@ html {
   height: 100%;
 }
 
+.default-toggle-button{
+  width: 44px;
+  height: 20px;
+  position: absolute;
+  left: 208px;
+  top: 60px;
+  border-top-left-radius: 50px;
+  border-top-right-radius: 50px;
+  border: 1px solid rgba(255, 0, 0, 0);
+  transform: rotate(90deg);
+  
+}
 .toggle-button{
   width: 44px;
   height: 20px;
   position: absolute;
-  left: 187px;
-  top: 59px;
+  left: 188px;
+  top: 60px;
   border-top-left-radius: 50px;
   border-top-right-radius: 50px;
   border: 1px solid rgba(255, 0, 0, 0);
@@ -41,10 +53,10 @@ html {
   top: 0%;
   z-index: 1;
   width: 105px;
-  padding: 0px;
+  padding-right: 115px;
   text-align: center;
-  font-size: 10px;
-  left: 78px;
+  font-size: 16px;
+  left: 0px;
   box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.123);
   
 }
@@ -91,40 +103,9 @@ li {
 
 }
 
-.arrow {
-  position: absolute;
-  width: 0px;
-  height: 0px;
-  border-left: 10px solid transparent;
-  border-right: 10px solid transparent;
-  left: 256px;
-  top: 40px;
 
-}
 
-.arrow-down {
-  border-top: 10px solid rgb(15, 15, 15);
-  transform: rotate(180deg);
-}
 
-.arrow-up {
-  position: absolute;
-
-  border-bottom: 10px solid black;
-  transform: rotate(180deg);
-}
-
-.arrow2 {
-  position: absolute;
-  width: 0;
-  height: 0;
-  border-left: 10px solid transparent;
-  border-right: 10px solid transparent;
-  border-bottom: 10px solid rgb(0, 0, 0);
-  left: 30.2%;
-  top: 80%;
-  transform: rotate(360deg);
-}
 .container-menu > ul{
   padding: 3%;
   margin-right: 7px;
@@ -137,7 +118,7 @@ li {
   padding: 3%;
   margin-right: 7px;
   position: absolute;
-  left: 0%;
+  left: 49%;
   top:25%
 }
 .container-menu a > li{
@@ -151,6 +132,7 @@ font-size: 20px;
   font-family: Garamond;
   font-size: 20px;
   font-style: italic;
+  
   font-weight: bold;
   top: 1%;
   width: 88%;
@@ -163,7 +145,7 @@ font-size: 20px;
   padding: 3%;
   margin-left: 5px;
   position: absolute;
-  left: 0%;
+  left: 25%;
 }
 
 .title{
@@ -197,9 +179,7 @@ font-size: 20px;
   transform: translateX(-100%);
 }
 .Profile{
-  background-color: rgb(40, 40, 56);
-  
-  border: solid 0.001px rgba(255, 255, 255, 0.11);
+  background-color: rgb(56 56 75);
   border-radius: 5%;
   font-size: 15px;
   top: 15%;
@@ -217,13 +197,13 @@ font-size: 20px;
   
 }
 .default-Profile{
-  background-color: rgb(40, 40, 56);
-  width: 80%;
-  border: solid 0.001px rgba(255, 255, 255, 0.11);
+  
+  width: 44%;
   border-radius: 5%;
+
   font-size: 15px;
   top: 15%;
-  height: 50px;
+  height: 68px;
   display: flex;
   flex-direction: column-reverse;
   flex-wrap: wrap;
@@ -232,7 +212,7 @@ font-size: 20px;
   padding: 3%;
   margin-left: 5px;
   position: absolute;
-  left: 0%;
+  left: 48%;
   
 }
 .container-menu-color {
@@ -279,6 +259,16 @@ a {
   align-content: space-around;
   justify-content: space-around;
 }
+.default-list{
+  box-shadow: 0px  1px  rgba(255, 255, 255, 0.123);
+  width: 100px;
+  height: 50px;
+  display: flex;
+  flex-direction: column-reverse;
+  
+  align-content: space-around;
+  justify-content: space-around;
+}
 .list:hover {
 
   background-color: rgb(60, 60, 83);
@@ -288,6 +278,16 @@ a {
   border-radius: 2%;
   box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.123);
 }
+.default-list:hover {
+
+  background-color: rgb(60, 60, 83);
+  cursor: pointer;
+ 
+  text-align: center;
+  border-radius: 2%;
+  box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.123);
+}
+
 
 .other {
   position: absolute;
