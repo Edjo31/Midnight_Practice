@@ -10,65 +10,70 @@ import { faAngleRight } from "@fortawesome/free-solid-svg-icons";
 
 const SideMenu = () => {
 
+    const font = <FontAwesomeIcon icon={faHouse} />
+
     const [isOpen, setIsOpen] = useState(false)
 
 
     useEffect(() => {
 
         const isOpenCache = localStorage.getItem("isOpen")
-      
+
 
         setIsOpen(isOpenCache === 'true')
-        
+
     }, [])
 
 
     const toggleMenu = () => {
         localStorage.setItem("isOpen", String(!isOpen))
         setIsOpen(!isOpen)
-        
+
     }
-    
-    const dropDownMenuAnimation=useSpring(
+
+    const dropDownMenuAnimation = useSpring(
         {
-            transform: isOpen ? 'translateX(0%)' :'translateX(-50%)',
+            transform: isOpen ? 'translateX(0%)' : 'translateX(-50%)',
         }
     )
-   
-    
-    
-    
+
+
+
+
 
     return (
         <div className="container">
-        
- 
-        < animated.div className={isOpen ? "container-menu container-menu-color container-menu-center" :"default-container default-container-menu"} style={ dropDownMenuAnimation}>
-                <button onClick={toggleMenu}   className={isOpen ? "toggle-button":"default-toggle-button"}><FontAwesomeIcon icon={faAngleRight} style={{ transform: isOpen ? "rotate(90deg)" : "rotate(270deg)" }} /></button>
 
-                <section className={isOpen ? "title":"default-title"}>{isOpen ? "Midnight practice":"MP"}</section>
-                
-                <section className={isOpen ? "Profile":"default-Profile"}> <img className={isOpen ? "img-profile":"default-img-profile"} src={profile}></img> 
-            {isOpen ? ( <ul>
-                    <li>Edjo31</li>
-                    <li>Admin</li>
-                </ul>):""}
-                
+
+            < animated.div className={isOpen ? "container-menu container-menu-color container-menu-center" : "default-container default-container-menu"} style={dropDownMenuAnimation}>
+                <button onClick={toggleMenu} className={isOpen ? "toggle-button" : "default-toggle-button"}><FontAwesomeIcon icon={faAngleRight} style={{ transform: isOpen ? "rotate(90deg)" : "rotate(270deg)" }} /></button>
+
+                <section className={isOpen ? "title" : "default-title"}>{isOpen ? "Midnight practice" : "MP"}</section>
+
+                <section className={isOpen ? "Profile" : "default-Profile"}> <img className={isOpen ? "img-profile" : "default-img-profile"} src={profile}></img>
+                    {isOpen ? (<ul>
+                        <li>Edjo31</li>
+                        <li>Admin</li>
+                    </ul>) : ""}
+
                 </section>
                 <ul >
-                    <a href="home"><li className={isOpen ? "list":"default-list"}>{isOpen ? "Principal":<FontAwesomeIcon icon={faHouse} />}</li> </a>
-                    <a href="home"><li className={isOpen ? "list":"default-list"}>{isOpen ? "Proyects":<FontAwesomeIcon icon={faDiagramProject} />}</li> </a>
-                    <a href="home"><li className={isOpen ? "list":"default-list"}>{isOpen ? "Proyects":<FontAwesomeIcon icon={faInbox} />}</li> </a>
-                    
-         
-                    
+                    <a href="home"><li className={isOpen ? "list" : "default-list"}>{isOpen ? 
+                    (<span className="icons"> <FontAwesomeIcon icon={faHouse} /> Principal</span>) 
+                    : <FontAwesomeIcon icon={faHouse} />}</li> </a>
+                    <a href="home"><li className={isOpen ? "list" : "default-list"}>{isOpen 
+                    ? (<span> <FontAwesomeIcon icon={faDiagramProject} /> Proyects</span>) 
+                    : <FontAwesomeIcon icon={faDiagramProject} />}</li> </a>
+                    <a href="home"><li className={isOpen ? "list" : "default-list"}>{isOpen
+                     ? (<span> <FontAwesomeIcon icon={faInbox} /> About</span>) 
+                     : <FontAwesomeIcon icon={faInbox} />}</li> </a>
                 </ul>
- </animated.div>
-         
+            </animated.div>
 
-           
 
-           
+
+
+
         </div>
     );
 

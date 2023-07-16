@@ -1,5 +1,5 @@
 html {
-  background-color: rgb(218, 216, 216);
+  background-color: rgb(32, 32, 32);
 
 }
 
@@ -17,7 +17,7 @@ html {
   height: 100%;
 }
 
-.default-toggle-button{
+.default-toggle-button {
   width: 44px;
   height: 20px;
   position: absolute;
@@ -27,9 +27,10 @@ html {
   border-top-right-radius: 50px;
   border: 1px solid rgba(255, 0, 0, 0);
   transform: rotate(90deg);
-  
+
 }
-.toggle-button{
+
+.toggle-button {
   width: 44px;
   height: 20px;
   position: absolute;
@@ -39,13 +40,15 @@ html {
   border-top-right-radius: 50px;
   border: 1px solid rgba(255, 0, 0, 0);
   transform: rotate(90deg);
-  
+
 }
-.default{
+
+.default {
   position: absolute;
   left: 90%;
 }
-.default-container{
+
+.default-container {
 
   background-color: rgba(38, 38, 53);
   position: absolute;
@@ -58,23 +61,9 @@ html {
   font-size: 16px;
   left: 0px;
   box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.123);
-  
+
 }
 
-.button-default {
-  padding: 10px 20px;
-  font-size: 16px;
-  background-color: #f1f1f1;
-  border: none;
-  cursor: pointer;
-  border: rebeccapurple;
-  border-radius: 100%;
-  margin-bottom: 10px;
-  left: 500px;
-  top: 39px;
-  height: 124px;
-  position: relative;
-}
 
 .button-default:hover {
   background-color: rgba(137, 43, 226, 0.192);
@@ -84,7 +73,7 @@ html {
 
 ul {
   list-style-type: none;
-  
+
 
 }
 
@@ -93,63 +82,48 @@ li {
 }
 
 
-.buttonTogle {
-  position: absolute;
 
-  width: 4%;
-  height: 8%;
-  left: 48.2%;
-  top: 3%;
-
-}
-
-
-
-
-.container-menu > ul{
+.container-menu>ul {
   padding: 3%;
   margin-right: 7px;
   position: absolute;
   left: 0%;
-  top:25%
+  top: 25%
 }
 
-.default-container-menu > ul{
+.default-container-menu>ul {
   padding: 3%;
   margin-right: 7px;
   position: absolute;
   left: 49%;
-  top:25%
+  top: 25%
 }
-.container-menu a > li{
-margin-top: 20px;
-font-size: 20px;
+
+.container-menu a>li {
+  margin-top: 20px;
+  font-size: 20px;
 
 }
 
-.default-title{
+.default-title {
   color: #ffffff;
   font-family: Garamond;
   font-size: 20px;
   font-style: italic;
-  
   font-weight: bold;
-  top: 1%;
-  width: 88%;
+  top: 5%;
+  width: 38%;
   height: 50px;
   display: flex;
-  flex-direction: column-reverse;
-  flex-wrap: wrap;
-  align-content: space-around;
   justify-content: space-around;
   padding: 3%;
   margin-left: 5px;
   position: absolute;
-  left: 25%;
+  left: 50%;
 }
 
-.title{
-  
+.title {
+
   font-family: Garamond;
   font-size: 20px;
   font-style: italic;
@@ -167,6 +141,7 @@ font-size: 20px;
   position: absolute;
   left: 0%;
 }
+
 .container-menu {
 
   position: absolute;
@@ -178,7 +153,8 @@ font-size: 20px;
   box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.123);
   transform: translateX(-100%);
 }
-.Profile{
+
+.Profile {
   background-color: rgb(56 56 75);
   border-radius: 5%;
   font-size: 15px;
@@ -194,10 +170,11 @@ font-size: 20px;
   margin-left: 5px;
   position: absolute;
   left: 0%;
-  
+
 }
-.default-Profile{
-  
+
+.default-Profile {
+
   width: 44%;
   border-radius: 5%;
 
@@ -213,25 +190,28 @@ font-size: 20px;
   margin-left: 5px;
   position: absolute;
   left: 48%;
-  
+
 }
+
 .container-menu-color {
   background-color: rgba(38, 38, 53);
   color: rgb(255, 255, 255);
   text-align: center;
 
 }
-.default-img-profile{
+
+.default-img-profile {
 
   border: solid 0.001px rgba(255, 255, 255, 0.11);
   width: 60%;
   height: 90%;
-  
+
   border-radius: 100%;
   box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.123);
   left: 0px;
 }
-.img-profile{
+
+.img-profile {
   border: solid 0.001px rgba(255, 255, 255, 0.11);
   width: 30%;
   height: 90%;
@@ -249,66 +229,48 @@ font-size: 20px;
 a {
   text-decoration: none;
 }
-.list{
-  box-shadow: 0px  1px  rgba(255, 255, 255, 0.123);
+
+.list {
+  box-shadow: 0px 1px rgba(255, 255, 255, 0.123);
   width: 180px;
   height: 50px;
   display: flex;
   flex-direction: column-reverse;
-  
+
   align-content: space-around;
   justify-content: space-around;
 }
-.default-list{
-  box-shadow: 0px  1px  rgba(255, 255, 255, 0.123);
+
+.default-list {
+  box-shadow: 0px 1px rgba(255, 255, 255, 0.123);
   width: 100px;
   height: 50px;
   display: flex;
   flex-direction: column-reverse;
-  
+
   align-content: space-around;
   justify-content: space-around;
 }
+
 .list:hover {
 
   background-color: rgb(60, 60, 83);
   cursor: pointer;
- 
+
   text-align: center;
   border-radius: 2%;
   box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.123);
 }
+
 .default-list:hover {
 
   background-color: rgb(60, 60, 83);
   cursor: pointer;
- 
+
   text-align: center;
   border-radius: 2%;
   box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.123);
 }
-
-
-.other {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.5);
-  z-index: 1;
-
-}
-
-.item1 {
-  position: absolute;
-  top: 0px;
-  left: 100px;
-}
-
-nav {
-  width: 100%;
-  height: 100%;
-}
-
 
 .conatiner-header {
   position: fixed;
@@ -346,7 +308,7 @@ nav {
   padding: 5px;
 
   display: none;
-  
+
 
 
 
