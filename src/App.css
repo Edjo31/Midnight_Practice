@@ -1,18 +1,17 @@
 html {
-  background-color: rgb(32, 32, 32);
-
+  background-color: rgb(216, 216, 216);
+  height: 100%;
 }
 
 .App {
 
-  position: fixed;
+  
   height: 100%;
   width: 100%;
 }
 
 .container {
 
-  position: fixed;
   left: 0%;
   height: 100%;
 }
@@ -29,7 +28,16 @@ html {
   transform: rotate(90deg);
 
 }
+.search-icon{
+ color:#757575;
 
+}
+.search-icon-position{
+  position: absolute;
+  top: 2%;
+  left: 87%;
+  z-index: 1;
+}
 .toggle-button {
   width: 44px;
   height: 20px;
@@ -98,7 +106,16 @@ li {
   left: 49%;
   top: 25%
 }
+.projects-container{
 
+  position: absolute; 
+  background-color: rgb(219, 19, 19);
+  width: 100%;
+  height: 100%;
+
+  top: 14%;
+
+}
 .container-menu a>li {
   margin-top: 20px;
   font-size: 20px;
@@ -309,10 +326,6 @@ a {
 
   display: none;
 
-
-
-
-
 }
 
 a>li {
@@ -343,14 +356,15 @@ a>li {
 
   color: #5468ff;
   ;
-
 }
 
 .special {
-  height: 100px;
+  height: 40px;
   cursor: pointer;
 }
 
 .special:hover {
   color: rgb(201, 176, 226);
 }
+
+
